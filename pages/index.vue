@@ -24,6 +24,7 @@
 </template>
 
 <script lang="ts">
+
 import { debounce } from 'lodash';
 import { ref } from 'vue';
 import { NpmRegistry } from '~/services/npm';
