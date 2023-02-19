@@ -1,7 +1,9 @@
+import { defineNuxtConfig } from '@nuxt/bridge';
+
 export default defineNuxtConfig({
     target: 'static', // default is 'server'
     app: {
-        baseURL: '/exists.dev/' // baseURL: '/<repository>/'
+        baseURL: '/' // baseURL: '/<repository>/'
     },
     modules: ['@nuxtjs/tailwindcss'],
 });

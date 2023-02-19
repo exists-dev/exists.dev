@@ -1,9 +1,8 @@
 module.exports = {
   plugins: [require("@tailwindcss/typography"), require('daisyui')],
   theme: {
-
     container: {
-      center: true,    
+      center: true,
       screens: {
         'tablet': '640px',
         // => @media (min-width: 640px) { ... }
@@ -22,5 +21,5 @@ module.exports = {
         '2xl': '6rem',
       },
     },
-  }, 
+  },
 };

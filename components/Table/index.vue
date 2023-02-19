@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-x-auto">
-    <table class="table w-full border border-primary rounded-lg" style="border-collapse: separate">
+    <table class="table w-full border rounded-lg" style="border-collapse: separate; border-color: rgb(0, 209, 164)">
       <thead>
         <tr>
           <th>Source</th>
