@@ -1,8 +1,10 @@
 <template>
   <div class="overflow-x-auto">
-    <table class="table w-full border rounded-lg" style="border-collapse: separate; border-color: rgb(0, 209, 164)">
+    <table class="table table-normal hover w-full border rounded-lg"
+      style="border-collapse: separate; border-color: rgb(0, 209, 164)">
       <thead>
         <tr>
+          <th></th>
           <th>Source</th>
           <th>Package Name</th>
           <th>Scope</th>
@@ -11,7 +13,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="result in results.objects" :key="result.package.name">
+        <tr v-for="(result, index) in results.objects" :key="index">
+          <td>{{ index + 1 }}</td>
           <td><span class="kbd">npmjs</span></td>
           <td><a class="link link-warning" :href="result.package.links.npm">{{
             result.package.name
@@ -42,3 +45,12 @@ export default {
   }
 };
 </script>
+
+<style>
+table>tbody>tr>td:first-child {
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0px;
+  z-index: 11;
+}
+</style>

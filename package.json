@@ -3,7 +3,7 @@
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
-    "generate": "nuxi generate && touch .output/public/.nojekyll && rm .output/public/.DS_Store",
+    "generate": "nuxi generate && touch .output/public/.nojekyll && cp CNAME .output/public/CNAME && rm .output/public/.DS_Store",
     "preview": "nuxi preview",
     "deploy": "gh-pages --dotfiles --dist dist",
     "postinstall": "nuxt prepare"
