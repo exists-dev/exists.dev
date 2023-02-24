@@ -1,7 +1,6 @@
 <template>
-  <div class="overflow-x-auto">
-    <table class="table table-normal hover w-full border rounded-lg"
-      style="border-collapse: separate; border-color: rgb(0, 209, 164)">
+  <div class="overflow-x-auto border border-success rounded-lg" style="border-collapse: separate;">
+    <table class="table table-normal hover w-full rounded-lg">
       <thead>
         <tr>
           <th></th>
@@ -21,9 +20,9 @@
           }}</a></td>
           <td>{{ result.package.scope }}</td>
           <td>{{ result.package.version }}</td>
-          <td>
+          <td class="whitespace-normal">
             <span class="tooltip" :data-tip="result.package.description">{{
-              result.package.description.substring(0, 100)
+              result.package.description
             }}</span>
           </td>
         </tr>

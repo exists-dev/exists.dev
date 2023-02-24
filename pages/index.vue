@@ -11,13 +11,9 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </div>
-
-                <!--             <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs"
-                v-model="query" @input="debouncedFetchData" /> -->
                 <input type="text" id="table-search"
-                    class="input input-bordered w-full block pl-10 p-2.5 focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-                    placeholder="Search for packages" v-model="query" @input="debouncedFetchData"
-                    style="border-color: rgb(0, 209, 164)">
+                    class="input input-bordered w-full block pl-10 p-2.5 border-success focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                    placeholder="Search for packages" v-model="query" @input="debouncedFetchData">
             </div>
         </div>
         <Table :results="results" />
